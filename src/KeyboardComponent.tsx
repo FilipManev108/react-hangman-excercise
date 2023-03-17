@@ -1,31 +1,31 @@
 import classes from "./KeyboardComponent.module.css";
 const KEYS: string[] = [
-  "a",
-  "b",
-  "c",
-  "d",
+  "q",
+  "w",
   "e",
+  "r",
+  "t",
+  "y",
+  "u",
+  "i",
+  "o",
+  "p",
+  "a",
+  "s",
+  "d",
   "f",
   "g",
   "h",
-  "i",
   "j",
   "k",
   "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
   "z",
+  "x",
+  "c",
+  "v",
+  "b",
+  "n",
+  "m",
 ];
 
 const KeyboardComponent = () => {
@@ -33,12 +33,16 @@ const KeyboardComponent = () => {
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(70px, 1fr))",
         gap: ".5rem",
       }}
     >
       {KEYS.map((key) => {
-        return <button className={classes.btn} key={key}>{key}</button>;
+        return (
+          <button className={classes.btn} key={key}>
+            {key}
+          </button>
+        );
       })}
     </div>
   );
