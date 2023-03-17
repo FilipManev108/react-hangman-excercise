@@ -1,3 +1,5 @@
+
+
 const HangmanWord = () => {
   const word: string = 'test'
   const guessedLetters: string[] = [];
