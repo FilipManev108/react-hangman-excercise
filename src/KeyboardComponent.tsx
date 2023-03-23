@@ -29,12 +29,14 @@ const KEYS: string[] = [
 ];
 
 type KeyboardComponentProps = {
+  disabled?: boolean;
   activeLetters: string[];
   inactiveLetters: string[];
   addGuessedLetter: (letter: string) => void;
 };
 
 const KeyboardComponent = ({
+  disabled = false,
   activeLetters,
   inactiveLetters,
   addGuessedLetter,
@@ -57,7 +59,7 @@ const KeyboardComponent = ({
               isInactive ? classes.inactive : ""
             }`}
             key={key}
-            disabled={isActive || isInactive}
+            disabled={isActive || isInactive || disabled}
           >
             {key}
           </button>

@@ -1,5 +1,6 @@
 const HEAD = (
   <div
+    key="HEAD"
     style={{
       height: "50px",
       width: "50px",
@@ -14,6 +15,7 @@ const HEAD = (
 
 const BODY = (
   <div
+    key="BODY"
     style={{
       height: "100px",
       width: "10px",
@@ -27,6 +29,7 @@ const BODY = (
 
 const RIGHT_ARM = (
   <div
+    key="RIGHT_ARM"
     style={{
       height: "10px",
       width: "100px",
@@ -42,6 +45,7 @@ const RIGHT_ARM = (
 
 const LEFT_ARM = (
   <div
+    key="LEFT_ARM"
     style={{
       height: "10px",
       width: "100px",
@@ -57,6 +61,7 @@ const LEFT_ARM = (
 
 const RIGHT_LEG = (
   <div
+    key="RIGHT_LEG"
     style={{
       height: "10px",
       width: "100px",
@@ -71,6 +76,7 @@ const RIGHT_LEG = (
 );
 const LEFT_LEG = (
   <div
+    key="LEFT_LEG"
     style={{
       height: "10px",
       width: "100px",
